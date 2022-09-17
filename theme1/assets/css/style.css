@@ -48,10 +48,6 @@ body{
     font-family: 'Inter', sans-serif !important;
 }
 
-.container{
-    /* padding: 0 220px; */
-}
-
 .row {
     --bs-gutter-x: 30px;
 }
@@ -98,12 +94,14 @@ h3{
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
+    color: var(--header_color2);
 }
 
 h4{
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    color: var(--header_color2);
 }
 
 h5{
@@ -137,7 +135,7 @@ a.bg, button.bg{
 }
 
 a.bg:hover, button.bg:hover{
-    background: rgba(0, 0, 0,.3);
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
 }
 
 p{
@@ -145,6 +143,7 @@ p{
     font-size: 16px;
     line-height: 24px;
     margin-top: 20px;
+    color: var(--text_color);
 }
 
 .header h4{
@@ -227,8 +226,9 @@ p{
 .BannerContent .BtnGroup .bg:first-child{
     margin-right: 20px;
 }
+
 .BannerContent a.bg:hover{
-    background: rgba(0, 0, 0,.5);
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
     color: var(--white);
 }
 
@@ -273,9 +273,13 @@ p{
     linear-gradient(330deg, #5433ff 0%, #20bdff 49%, #a5fecb 100%);
     border-radius: 10px;
     box-sizing: border-box;
-    height: 600px;
+    height: 630px;
     margin-right: 35px;
     position: relative;
+}
+
+.AboutUsContent h2 {
+    max-width: 600px;
 }
 
 .AboutUsImg img {
@@ -299,24 +303,30 @@ p{
 }
 
 .WeBelieveInItemBorder {
-    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 5px, transparent 5px) 0% 0%/10px 10px no-repeat,            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 5px, transparent 5px) 100% 0%/10px 10px no-repeat,            
-    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 5px, transparent 5px) 0% 100%/10px 10px no-repeat,            
-    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 5px, transparent 5px) 100% 100%/10px 10px no-repeat,            
-    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 20px) no-repeat,            
-    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 10px) no-repeat,            
-    radial-gradient(circle at 50px 50px, #5433ff 0%, #20bdff 49%, #A5FECB 100%);
     border-radius: 10px;
     box-sizing: border-box;
     display: inline-block;
     padding: 10px;
     margin-top: 20px;
+    text-align: center;
+}
+
+.WeBelieveInItemBorder h6{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-weight: 600;
 }
 
 .WeBelieveInItem{
     background: #FFFFFF;
     box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
+}
+
+.WeBelieveInItem img {
+    height: 80px;
 }
 
 
@@ -440,8 +450,420 @@ p{
 
 
 /* ====================================================================================================================
+    Start LetsBuild Part
+======================================================================================================================= */
+#LetsBuild{
+    background: url('../images/lets_build.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 120px 0;
+    margin-top: 180px;
+}
+
+#LetsBuild h2{
+    color: var(--white);
+}
+
+#LetsBuild h3{
+    color: var(--white);
+    margin-top: 20px;
+}
+
+#LetsBuild .bg{
+    margin-top: 30px;
+}
+
+
+
+
+/* ====================================================================================================================
+    Start OurProject Part
+======================================================================================================================= */
+
+.OurProjectContent{
+    margin-top: 50px;
+}
+
+.OurProjectContentItem{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    border-radius: 10px;
+    transition: all linear .5s;
+    text-align: center;
+}
+
+.OurProjectContentItem .img {
+    position: relative;
+    background: #FFF;
+    z-index: 9;
+    padding: 60px 30px;
+    padding-bottom: 20px;
+    transition: all linear .4s;
+    overflow: hidden;
+}
+
+.OurProjectContentItem .img::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0px;
+    background: rgb(217, 217, 217);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0px 0px, 0px 100%, 100% 100%);
+    transition: all 0.4s linear 0s;
+    transform: translateX(-20px);
+}
+
+.OurProjectContentItem .img::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    right: 0;
+    transform: translateX(20px);
+    background: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    transition: all linear .4s;
+}
+
+.OurProjectContentItem .img img{
+    position: relative;
+    z-index: 9;
+    width: 100%;
+}
+
+.OurProjectContentItem:hover .img::before{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #A5FECB 85.09%);
+    transform: translateX(0px);
+
+}
+
+.OurProjectContentItem:hover .img::after{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #A5FECB 85.09%);
+    transform: translateX(0px);
+}
+
+.OurProjectContentItem .text{
+    padding: 20px;
+}
+
+.OurProjectContentItem .text .bg{
+    margin-top: 20px;
+    border: 1px solid var(--bg_color);
+    background: var(--white);
+    color: var(--bg_color);
+}
+
+.OurProjectContentItem:hover .bg{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%);
+    color: var(--white);
+}
+
+/* ====================================================================================================================
+    Start MeetOurPartner Part
+======================================================================================================================= */
+.MeetOurPartnerContent{
+    margin-top: 50px;
+}
+
+.MeetOurPartnerContent img{
+    width: 100%;
+}
+
+.MeetOurLeftImg{
+    margin-right: 50px;
+}
+
+
+
+
+/* ====================================================================================================================
+    Start OurClient Part
+======================================================================================================================= */
+.OurClientContent{
+    margin-top: 150px;
+}
+
+.OurClientSlider{
+    margin-right: 50px;
+}
+
+.OurClientSliderItem{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 5px rgba(217, 217, 217, 0.25);
+    border-radius: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.OurClientSlider .img {
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.OurClientSlider .img img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.OurClientContent .swiper-cube .swiper-cube-shadow:before{
+    display: none;
+}
+
+.OurClientSliderItem .text {
+    padding: 60px 0;
+    padding-top: 80px;
+}
+
+.OurClientSliderItem h5{
+    color: var(--header_color);
+}
+
+.OurClientSliderItem .header{
+    position: relative;
+}
+
+.OurClientSliderItem .header .quote {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.OurClientSliderItem .header .quote img{
+    height: 140px;
+    width: 100%;
+    border-radius: unset;
+    object-fit: fill;
+}
+
+.OurClientSliderItem h6{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--header_color2);
+    margin-top: 5px;
+}
+
+.OurClientSliderItem span{
+    margin-top: 5px;
+    color: var(--header_color2);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+}
+
+.OurClientSliderItem {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 5px rgba(217, 217, 217, 0.25);
+    border-radius: 20px;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.OurClientSliderItem p{
+    margin-top: 30px;
+}
+
+/* Slider css */
+.OurClientContent span.swiper-pagination-bullet {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 10px !important;
+}
+
+.OurClientContent span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
+}
+
+.OurClientContent .swiper-pagination {
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+}
+
+.OurClientImg img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+/* ====================================================================================================================
+    Start ThinkingDigitalization Part
+======================================================================================================================= */
+#ThinkingDigitalization{
+    background: url('../images/Thinking_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    margin-top: 250px;
+}
+
+#ThinkingDigitalization h2{
+    color: var(--white);
+}
+
+#ThinkingDigitalization h3{
+    color: var(--white);
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#ThinkingDigitalization .bg{
+    margin-top: 30px;
+}
+
+.ThinkingDigitalizationImg{
+    position: relative;
+}
+
+.ThinkingDigitalizationImg img {
+    position: absolute;
+    top: -300px;
+    width: 85%;
+}
+
+
+/* ====================================================================================================================
+    Start Faq Part
+======================================================================================================================= */
+#Faq{
+    position: relative;
+    padding: 50px 0;
+    height: 800px;
+}
+
+.PositionImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.PositionImg img{
+    height: 100%;
+}
+
+#Faq .container{
+    position: relative;
+    z-index: 9;
+}
+
+#Faq .header h2, #Faq .header h4{
+    color: var(--white);
+}
+
+#Faq .accordion-item {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border-radius: 18px;
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+#Faq .accordion-item button {
+    padding: 0px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--header_color2);
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+#Faq .accordion-item button h4{
+    font-size: 20px;
+    width: 90%;
+    color: var(--header_color);
+}
+
+#Faq .accordion-item button.collapsed h4{
+    font-size: 20px;
+    width: 90%;
+    color: var(--header_color2);
+}
+
+#Faq .accordion-item p{
+    margin-top: 0;
+}
+
+#Faq .accordion-body {
+    padding: 0;
+    padding-top: 30px;
+}
+
+#Faq .accordion-button::after{
+    display: none;
+}
+
+#Faq button .svg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    background: var(--bg_color);
+    cursor: pointer;
+    transition: all linear .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Faq button.collapsed .svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    transform: rotate(180deg);
+    background: var(--white);
+}
+
+
+#Faq  button .svg i{
+    color: var(--white);
+    font-size: 30px;
+}
+
+#Faq button.collapsed .svg i{
+    color: var(--header_color);
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+/* ====================================================================================================================
     Start  Part
 ======================================================================================================================= */
+
+
+
+
+
+
+
+/* ====================================================================================================================
+    Start  Part
+======================================================================================================================= */
+
 
 
 

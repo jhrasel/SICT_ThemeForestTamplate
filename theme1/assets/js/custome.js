@@ -30,6 +30,10 @@ $(function() {
     var swiper = new Swiper(".ServiceSlider", {
         slidesPerView: 4,
         spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: false,
         navigation: {
             nextEl: ".NextArrow",
@@ -37,5 +41,28 @@ $(function() {
         },
     });
 
+    // OurClient Slider
+    var swiper = new Swiper(".OurClientSlider", {
+        effect: "cube",
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
 });
