@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Solution</title>
+    <title>The Blue Soft</title>
 
 
     <!-- Google Font -->
@@ -27,14 +27,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- unicons.iconscout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Aos css Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main Css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Media Query -->
-    <link rel="stylesheet" href="assets/css/media.css.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
 </head>
 <body>
 
+<div class="overflow">
 
 <!-- ====================================================================================================================
     Start MenuBar Part
@@ -46,10 +49,10 @@
         <div class="row d_flex">
 
             <!-- logo Part -->
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-6">
 
                 <div class="logo">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <img src="assets/images/logo.svg" alt="logo">
                 </div>
 
             </div>
@@ -88,6 +91,60 @@
 
             </div>
 
+            <!-- Mobile Menu -->
+            <div class="col-lg-10 col-6">
+
+                <div class="MobileMenu">
+
+                    <button type="button" class="bar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="uil uil-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+                        <div class="offcanvas-header">
+                          <h4 class="offcanvas-title" id="offcanvasExampleLabel"></h4>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+
+                            <!-- Menu -->
+                            <div class="menuItem">
+
+                                <ul>
+            
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">FAQ’s</a></li>
+                                    <li><a href="">Contact</a></li>
+            
+                                </ul>
+            
+                            </div>
+
+                            <!-- Social Icon -->
+                            <div class="SocialIcon">
+
+                                <a href=""><i class="uil uil-facebook-f"></i></a>
+                                <a href=""><i class="uil uil-twitter"></i></a>
+                                <a href=""><i class="uil uil-instagram"></i></a>
+                                <a href=""><i class="uil uil-linkedin"></i></a>
+                                <a href=""><i class="uil uil-youtube"></i></a>
+            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -102,105 +159,178 @@
 
     <div class="container">
 
-        <div class="row d_flex">
+        <!-- Desktop Banner -->
+        <div class="DesktopBanner">
 
-            <!-- Banner Content -->
-            <div class="col-lg-6">
+            <div class="row d_flex">
 
-                <div class="BannerContent">
-                    <h6>Are You Looking For</h6>
-                    <h1>EFFECTIVE DIGITAL SOLUTION ?</h1>
-                    <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
-
-                    <div class="BtnGroup">
-
-                        <a href="" class="bg">Get Demo</a>
-                        <a href="" class="bg">Call Us</a>
-
+                <!-- Banner Content -->
+                <div class="col-lg-6">
+    
+                    <div class="BannerContent">
+                        <h6>Are You Looking For</h6>
+                        <h1>EFFECTIVE DIGITAL SOLUTION ?</h1>
+                        <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+    
+                        <div class="BtnGroup">
+    
+                            <a href="" class="bg">Get Demo</a>
+                            <a href="" class="bg">Call Us</a>
+    
+                        </div>
+    
+                        <div class="BannerSliderImg Left">
+    
+                            <div thumbsSlider="" class="swiper mySwiper">
+    
+                                <div class="swiper-wrapper">
+    
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img src="assets/images/banner_slider1.png" alt="banner_slider1">
+                                        </div>
+                                    </div>
+    
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img src="assets/images/banner_slider2.png" alt="banner_slider1">
+                                        </div>
+                                    </div>
+    
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img src="assets/images/banner_slider3.png" alt="banner_slider1">
+                                        </div>
+                                    </div>
+    
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img src="assets/images/banner_slider4.png" alt="banner_slider1">
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
                     </div>
-
-                    <div class="BannerSliderImg Left">
-
-                        <div thumbsSlider="" class="swiper mySwiper">
-
+    
+                </div>
+    
+                <!-- Banner Photo -->
+                <div class="col-lg-6">
+    
+                    <div class="BannerSliderImg Right">
+    
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"class="swiper mySwiper2">
+    
                             <div class="swiper-wrapper">
-
+    
                                 <div class="swiper-slide">
                                     <div class="img">
                                         <img src="assets/images/banner_slider1.png" alt="banner_slider1">
                                     </div>
                                 </div>
-
+    
                                 <div class="swiper-slide">
                                     <div class="img">
                                         <img src="assets/images/banner_slider2.png" alt="banner_slider1">
                                     </div>
                                 </div>
-
+    
                                 <div class="swiper-slide">
                                     <div class="img">
                                         <img src="assets/images/banner_slider3.png" alt="banner_slider1">
                                     </div>
                                 </div>
-
+    
                                 <div class="swiper-slide">
                                     <div class="img">
                                         <img src="assets/images/banner_slider4.png" alt="banner_slider1">
                                     </div>
                                 </div>
-
+    
                             </div>
-
+    
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+    
                         </div>
-
+    
                     </div>
-
+    
                 </div>
-
+    
             </div>
 
-            <!-- Banner Photo -->
-            <div class="col-lg-6">
+        </div>
 
-                <div class="BannerSliderImg Right">
+        <!-- MobileBanner -->
+        <div class="MobileBanner">
 
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"class="swiper mySwiper2">
+            <div class="row">
 
-                        <div class="swiper-wrapper">
+                <!-- Banner Content -->
+                <div class="col-lg-12">
+    
+                    <div class="BannerContent">
+                        <h6>Are You Looking For</h6>
+                        <h1>EFFECTIVE DIGITAL SOLUTION ?</h1>
+                        <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+    
+                        <div class="BtnGroup">
+    
+                            <a href="" class="bg">Get Demo</a>
+                            <a href="" class="bg">Call Us</a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- Banner Slider -->
+                <div class="col-lg-12">
+    
+                    <div class="MobileBannerContent">
 
-                            <div class="swiper-slide">
-                                <div class="img">
+                        <div class="swiper MobileBannerSlider">
+
+                            <div class="swiper-wrapper">
+
+                                <!-- item -->
+                                <div class="swiper-slide">
                                     <img src="assets/images/banner_slider1.png" alt="banner_slider1">
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide">
-                                <div class="img">
+                                <!-- item -->
+                                <div class="swiper-slide">
                                     <img src="assets/images/banner_slider2.png" alt="banner_slider1">
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide">
-                                <div class="img">
+                                <!-- item -->
+                                <div class="swiper-slide">
                                     <img src="assets/images/banner_slider3.png" alt="banner_slider1">
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide">
-                                <div class="img">
+                                <!-- item -->
+                                <div class="swiper-slide">
                                     <img src="assets/images/banner_slider4.png" alt="banner_slider1">
                                 </div>
+                              
+                              
                             </div>
+
+                            <div class="swiper-pagination"></div>
 
                         </div>
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-
                     </div>
-
+    
                 </div>
-
+    
             </div>
 
         </div>
@@ -217,7 +347,7 @@
 <!-- ====================================================================================================================
     Start AboutUs Part
 =========================================================================================================================-->
-<section id="AboutUs">
+<section id="AboutUs" data-aos="fade-up" data-aos-duration="1000">
 
     <div class="container">
 
@@ -236,6 +366,11 @@
             <div class="col-lg-7">
 
                 <div class="AboutUsContent">
+
+                    <!-- Overlay Text -->
+                    <div class="OverlayText">
+                        <h6>About Us</h6>
+                    </div>
 
                     <div class="header">
 
@@ -316,7 +451,12 @@
 =========================================================================================================================-->
 <section id="OurService">
 
-    <div class="container">
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>What We Are Offering</h6>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
 
         <!-- header -->
         <div class="row">
@@ -662,7 +802,7 @@
 <!-- ====================================================================================================================
     Start LetsBuild Part
 =========================================================================================================================-->
-<section id="LetsBuild">
+<section id="LetsBuild" data-aos="zoom-in" data-aos-duration="1000">
 
     <div class="container">
 
@@ -695,7 +835,12 @@
 <!-- ====================================================================================================================
     Start OurProject Part
 =========================================================================================================================-->
-<section id="OurProject">
+<section id="OurProject" data-aos="zoom-in" data-aos-duration="1000">
+
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>Our Projects</h6>
+    </div>
 
     <div class="container">
 
@@ -721,7 +866,7 @@
             <div class="row">
 
                 <!-- item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
 
                     <div class="OurProjectContentItem">
 
@@ -743,7 +888,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
 
                     <div class="OurProjectContentItem">
 
@@ -765,7 +910,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
 
                     <div class="OurProjectContentItem">
 
@@ -787,7 +932,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
 
                     <div class="OurProjectContentItem">
 
@@ -824,7 +969,12 @@
 <!-- ====================================================================================================================
     Start MeetOurPartner Part
 =========================================================================================================================-->
-<section id="MeetOurPartner">
+<section id="MeetOurPartner" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>Meet Our Partners</h6>
+    </div>
 
     <div class="container">
 
@@ -883,7 +1033,12 @@
 <!-- ====================================================================================================================
     Start OurClient Part
 =========================================================================================================================-->
-<section id="OurClient">
+<section id="OurClient" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>What Our Clients Say</h6>
+    </div>
 
     <div class="container">
 
@@ -1060,7 +1215,7 @@
 <!-- ====================================================================================================================
     Start ThinkingDigitalization Part
 =========================================================================================================================-->
-<section id="ThinkingDigitalization">
+<section id="ThinkingDigitalization" data-aos="zoom-in" data-aos-duration="1000">
 
     <div class="container">
 
@@ -1105,7 +1260,12 @@
 <!-- ====================================================================================================================
     Start Faq Part
 =========================================================================================================================-->
-<section id="Faq">
+<section id="Faq" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>What Our Clients Say</h6>
+    </div>
 
     <!-- position img -->
     <div class="PositionImg">
@@ -1117,7 +1277,7 @@
         <div class="row">
 
             <!-- Left Text -->
-            <div class="col-lg-5">
+            <div class="col-lg-12 col-xl-5">
 
                 <div class="header">
                     <h4>Check What People Frequently Ask Us</h4>
@@ -1127,7 +1287,7 @@
             </div>
 
             <!-- Right Text -->
-            <div class="col-lg-7">
+            <div class="col-lg-12 col-xl-7">
 
                 <div class="FaqTabs">
 
@@ -1245,9 +1405,270 @@
 <!-- Section Gaps -->
 
 <!-- ====================================================================================================================
-    Start  Part
+    Start OurGallery Part
 =========================================================================================================================-->
+<section id="OurGallery" data-aos="fade-up" data-aos-duration="1000">
 
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>Our Gallery</h6>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h4>Live The Moments Of Our Company Events</h4>
+                    <h2>Our Gallery</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- OurGallery Content -->
+        <div class="OurGalleryContent">
+
+            <!-- Desktop Gallery -->
+            <div class="DesktopGallery">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+    
+                        <div class="swiper OurGallerySlider">
+    
+                            <div class="swiper-wrapper">
+    
+                                <!-- item -->
+                                <div class="swiper-slide">
+    
+                                    <div class="OurGalleryItem">
+    
+                                        <div class="row">
+                                            
+                                            <!-- Single Img -->
+                                            <div class="col-lg-4">
+    
+                                                <div class="OurGalleryItem">
+                            
+                                                    <div class="row">
+                            
+                                                        <div class="col-lg-12">
+                                                            
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal1.png" alt="">
+                                                            </div>
+                            
+                                                        </div>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </div>
+    
+                                            <!-- Other Img -->
+                                            <div class="col-lg-8">
+    
+                                                <div class="OurGalleryItem">
+                            
+                                                    <div class="row">
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal2.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal3.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal4.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal5.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal6.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal7.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </div>
+    
+                                        </div>
+                
+                                    </div>
+    
+                                </div>
+    
+                                <!-- item -->
+                                <div class="swiper-slide">
+    
+                                    <div class="OurGalleryItem">
+    
+                                        <div class="row">
+                                            
+                                            <!-- Single Img -->
+                                            <div class="col-lg-4">
+    
+                                                <div class="OurGalleryItem">
+                            
+                                                    <div class="row">
+                            
+                                                        <div class="col-lg-12">
+                                                            
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal1.png" alt="">
+                                                            </div>
+                            
+                                                        </div>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </div>
+    
+                                            <!-- Other Img -->
+                                            <div class="col-lg-8">
+    
+                                                <div class="OurGalleryItem">
+                            
+                                                    <div class="row">
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal2.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal3.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal4.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal5.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal6.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="col-lg-4">
+                                                            <div class="OurGalleryImg">
+                                                                <img src="assets/images/gal7.png" alt="">
+                                                            </div>
+                                                        </div>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </div>
+    
+                                        </div>
+                
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="swiper-pagination"></div>
+                            
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <!-- Mobile Gallery -->
+            <div class="MobileGallery">
+
+                <div class="swiper MobileGallerySlider">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- item -->
+                        <div class="swiper-slide">
+                            <div class="OurGalleryImg">
+                                <img src="assets/images/gal1.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="swiper-slide">
+                            <div class="OurGalleryImg">
+                                <img src="assets/images/gal2.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="swiper-slide">
+                            <div class="OurGalleryImg">
+                                <img src="assets/images/gal3.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="swiper-slide">
+                            <div class="OurGalleryImg">
+                                <img src="assets/images/gal4.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
@@ -1257,9 +1678,227 @@
 <!-- Section Gaps -->
 
 <!-- ====================================================================================================================
-    Start  Part
+    Start OurBlog Part
 =========================================================================================================================-->
+<section id="OurBlog" data-aos="fade-up" data-aos-duration="1000">
 
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>Our Blogs</h6>
+    </div>
+
+    <div class="container">
+
+        <!-- header -->
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h4>Get News On Our Latest Events & Technologies</h4>
+                    <h2>Our Blogs</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- OurBlog Content -->
+        <div class="OurBlogContent">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="swiper OurBlogSlider">
+
+                        <div class="swiper-wrapper">
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog1.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog2.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog3.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog4.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog1.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog2.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog3.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- item -->
+                            <div class="swiper-slide">
+
+                                <div class="OurBlogSliderItem">
+
+                                    <div class="img">
+                                        <img src="assets/images/blog4.png" alt="blog">
+                                    </div>
+
+                                    <div class="text">
+
+                                        <h4 class="d_flex"> <i class="uil uil-calender"></i> July 25, 2022</h4>
+                                        <h3>Nunc tincidunt dolor et sollicitudin bibendum.</h3>
+                                        <a href="" class="bg">Rerad More</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
@@ -1269,8 +1908,220 @@
 <!-- Section Gaps -->
 
 <!-- ====================================================================================================================
-    Start  Part
+    Start ContuctUs Part
 =========================================================================================================================-->
+<section id="ContuctUs">
+
+    <!-- Overlay Text -->
+    <div class="OverlayText">
+        <h6>Contact Us</h6>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h4>Live The Moments Of Our Company Events</h4>
+                    <h2>Contact Us</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ContuctUs Content -->
+        <div class="ContuctUsContent">
+
+            <div class="container">
+
+                <form action="" method="post">
+
+                    <div class="row d_flex">
+    
+                        <!-- left Part -->
+                        <div class="col-lg-6">
+        
+                            <div class="ContuctUsLeft">
+    
+                                <!-- Name -->
+                                <div class="custome_input">
+                                    <label>Full Name</label>
+                                    <input type="text" name="">
+                                </div>
+    
+                                <!-- Contact Number -->
+                                <div class="custome_input">
+                                    <label>Contact Number</label>
+                                    <input type="text" name="">
+                                </div>
+    
+                                 <!-- Email Address -->
+                                 <div class="custome_input">
+                                    <label>Email Address</label>
+                                    <input type="text" name="">
+                                </div>
+    
+                                <!-- Your Message -->
+                                <div class="custome_input">
+                                    <label>Your Message</label>
+                                    <textarea name="" rows="5"></textarea>
+                                </div>
+    
+                                <!-- Submit -->
+                                <div class="custome_input">
+                                    <button class="bg">Submit</button>
+                                </div>
+    
+    
+                            </div>
+        
+                        </div>
+    
+                        <!-- Right Part -->
+                        <div class="col-lg-6">
+    
+                            <div class="ContuctUsRight d_flex d_justify">
+                                
+                                <!-- img -->
+                                <div class="img">
+                                    <img src="assets/images/contact_img.png" alt="contact_img">
+                                </div>
+                                
+                                <!-- Social Icon -->
+                                <div class="SocialIcon">
+
+                                    <a href=""><i class="uil uil-facebook-f"></i></a>
+                                    <a href=""><i class="uil uil-twitter"></i></a>
+                                    <a href=""><i class="uil uil-instagram"></i></a>
+                                    <a href=""><i class="uil uil-linkedin"></i></a>
+                
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+                
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div class="ContuctUsRightBg"></div>
+
+</section>
+
+
+
+<!-- Section Gaps -->
+<div class="section_gaps"></div>
+<!-- Section Gaps -->
+
+<!-- ====================================================================================================================
+    Start Footer Part
+=========================================================================================================================-->
+<footer id="Footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- logo -->
+            <div class="col-lg-4">
+
+                <div class="FooterContent">
+
+                    <div class="logo">
+                        <img src="assets/images/logo.svg" alt="">
+                    </div>
+
+                    <p>Risus ut laoreet lacinia pulvinar vel adipiscing sed. Tellus, in sed gravida amet congue proin. Sit sit sodales vel, pulvinar vitae dolor. Lectus diam in sit imperdiet turpis sed massa.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Reach Us -->
+            <div class="col-lg-4">
+
+                <div class="FooterContent">
+
+                    <h3>Reach Us</h3>
+
+                    <ul>
+
+                        <li class="d_flex">
+                            <i class="uil uil-location-point"></i>
+                            <p>Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815</p>
+                        </li>
+
+                        <li class="d_flex">
+                            <i class="uil uil-envelope"></i>
+                            <p>support@figma.com</p>
+                        </li>
+
+                        <li class="d_flex">
+                            <i class="uil uil-phone-volume"></i>
+                            <p>+1 800 854-36-80</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg-4">
+
+                <div class="FooterContent">
+
+                    <h3>Reach Us</h3>
+
+                    <ul>
+
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Teams</a></li>
+                        <li><a href="">Contact Us</a></li>
+
+                    </ul>
+
+                    <div class="SocialIcon">
+
+                        <a href=""><i class="uil uil-facebook-f"></i></a>
+                        <a href=""><i class="uil uil-twitter"></i></a>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-linkedin"></i></a>
+                        <a href=""><i class="uil uil-youtube"></i></a>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</div>
+<!-- ====================================================================================================================
+    Start BackToTop Part
+=========================================================================================================================-->
+<a id="BackToTop"><i class="uil uil-angle-up"></i></a>
 
 
     <!-- Js Script File -->
@@ -1283,6 +2134,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- custome.js -->
     <script src="assets/js/custome.js"></script>
+
+    <!-- Aos js Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
