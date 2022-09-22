@@ -1,0 +1,1256 @@
+/* 
+    Author          : Soft IT Care
+    Tamplate Name   : The Blue Soft
+    Author URI      : 
+    Description     : Company Portfolio Bootstrap
+    Version         : 1.0
+*/
+
+/* 
+-------------------------------------------------
+CSS INDEXING
+-------------------------------------------------
+
+ 01 =>  Common Css Style
+ 02 =>  Home Page Style
+        => Menubar
+        => Banner
+        => AboutUs
+        => OurService
+        => LetsBuild
+        => OurProject
+        => MeetOurPartner
+        => OurClient
+        => ThinkingDigitalization
+        => Faq
+        => OurGallery
+        => OurBlog
+        => ContuctUs
+        => Footer
+        => 
+
+*/
+
+
+/* ====================================================================================================================
+    Start Common Css Part
+======================================================================================================================= */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+a,
+p,
+h1, h2, h3, h4, h5, h6 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body{
+    font-family: 'Inter', sans-serif !important;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+/* row */
+.row {
+    --bs-gutter-x: 30px;
+}
+
+/* web-Site Color */
+:root{
+    --white: #FFFFFF;
+    --header_color: #2A35B3;
+    --header_color2: #4F4F4F;
+    --bg_color: #5433FF;
+    --text_color: #9E9E9E;
+
+}
+
+/* Section gaps */
+.section_gaps{
+    margin-top: 120px;
+}
+
+/* use for flex */
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+
+.d_justify{
+    justify-content: space-between;
+}
+
+/* h1 */
+h1{
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 75px;
+    color: var(--white);
+}
+
+/* h2 */
+h2{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--header_color2);
+}
+
+/* h3 */
+h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--header_color2);
+}
+
+/* h4 */
+h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--header_color2);
+}
+
+/* h5 */
+h5{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+/* h6 */
+h6{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+/* a, button */
+a, button{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+
+a.bg, button.bg{
+    font-weight: 600;
+    color: var(--white);
+    background: var(--bg_color);
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all linear .3s;
+}
+
+a.bg:hover, button.bg:hover{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
+}
+
+/* p */
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: var(--text_color);
+}
+
+/* header */
+.header h4{
+    font-size: 20px;
+    color: var(--header_color);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* OverlayText */
+
+.OverlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.OverlayText h6 {
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 242px;
+    color: var(--text_color);
+    opacity: 0.07;
+    white-space: nowrap;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+/* ====================================================================================================================
+    Start MenuBar Part
+======================================================================================================================= */
+#MenuBar {
+    background: linear-gradient(90deg, #1488CC 19.8%, #2B32B2 85.09%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all linear .3s;
+}
+
+#MenuBar .logo{
+    padding: 15px 0;
+    transition: all linear .3s;
+}
+
+#MenuBar .logo img {
+    height: 65px;
+}
+
+.menuItem{
+    text-align: center;
+}
+
+.menuItem ul li{
+    display: inline-block;
+}
+
+.menuItem ul li a{
+    padding: 0 20px;
+    color: var(--white);
+}
+
+.SocialIcon{
+    text-align: right;
+}
+
+.SocialIcon a{
+    padding: 0 10px;
+}
+
+.SocialIcon a:last-child{
+    padding-right: 0;
+}
+
+.SocialIcon a i{
+    color: var(--white);
+    font-size: 24px;
+}
+
+/* Sticky Menu */
+#MenuBar.sticky .logo{
+    padding: 10px 0;
+}
+
+#MenuBar.sticky .logo img {
+    height: 55px;
+}
+
+#MenuBar.sticky .menuItem ul li a{
+    font-size: 18px;
+}
+
+/* Mobile Menu */
+
+.MobileMenu{
+    display: none;
+}
+
+.MobileMenu button.bar {
+    border: 0;
+    background: none;
+}
+
+.MobileMenu button.bar i{
+    color: var(--white);
+    font-size: 30px;
+}
+
+/* ====================================================================================================================
+    Start Banner Part
+======================================================================================================================= */
+#Banner {
+    background: url('../images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    margin-top: 80px;
+}
+
+.BannerContent h6{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.BannerContent p{
+    color: var(--white);
+}
+
+.BannerContent .BtnGroup .bg{
+    background: var(--white);
+    color: var(--header_color);
+}
+
+.BannerContent .BtnGroup .bg:first-child{
+    margin-right: 20px;
+}
+
+.BannerContent a.bg:hover{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
+    color: var(--white);
+}
+
+.BannerSliderImg .img{
+    background: #FFFFFF;
+    box-shadow: -78.9352px 61.3941px 80px rgba(0, 0, 0, 0.07), -51.1617px 39.7924px 46.8519px rgba(0, 0, 0, 0.0531481), -30.4047px 23.6481px 25.4815px rgba(0, 0, 0, 0.0425185), -15.787px 12.2788px 13px rgba(0, 0, 0, 0.035), -6.43176px 5.00248px 6.51852px rgba(0, 0, 0, 0.0274815), -1.46176px 1.13693px 3.14815px rgba(0, 0, 0, 0.0168519);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.BannerSliderImg .img img {
+    width: 100%;
+    border-radius: 30px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.BannerSliderImg.Left{
+    margin-top: 50px;
+}
+
+.BannerSliderImg.Left .img{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.BannerSliderImg.Left .img img{
+    border-radius: 10px;
+    height: 120px;
+    cursor: pointer;
+}
+
+#Banner .swiper-button-next:after, #Banner .swiper-button-prev:after{
+    display: none;
+}
+
+/* Mobile Banner */
+.MobileBanner{
+    display: none;
+}
+
+/* ====================================================================================================================
+    Start AboutUs Part
+======================================================================================================================= */
+.AboutUsImg {
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 20px) no-repeat,            
+    linear-gradient(330deg, #5433ff 0%, #20bdff 49%, #a5fecb 100%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 630px;
+    margin-right: 35px;
+    position: relative;
+}
+
+.AboutUsContent{
+    position: relative;
+}
+
+.AboutUsContent .OverlayText {
+    top: -100px;
+}
+
+.AboutUsContent h2 {
+    max-width: 600px;
+}
+
+.AboutUsImg img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 98%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.WeBelieveIn{
+    margin-top: 30px;
+}
+
+.WeBelieveIn h4{
+    font-size: 28px;
+    color: var(--header_color2);
+    font-weight: 600;
+}
+
+.WeBelieveInItemBorder {
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.WeBelieveInItemBorder h6{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.WeBelieveInItem{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.WeBelieveInItem img {
+    height: 80px;
+}
+
+
+/* ====================================================================================================================
+    Start OurService Part
+======================================================================================================================= */
+
+#OurService{
+    background: #F2F4F8;
+    padding: 120px 0;
+    max-height: 700px;
+    position: relative;
+}
+
+#OurService .OverlayText {
+    top: 35px;
+}
+
+.OurServiceContent {
+    margin-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.swiper-wrapper{
+    padding-bottom: 50px;
+}
+
+.ServiceSliderItem{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.ServiceSliderItem img {
+    height: 100px;
+}
+
+.ServiceSliderItem .text{
+    margin-top: 20px;
+    border-bottom: 2px dashed var(--header_color);
+    padding-bottom: 30px;
+}
+
+.ServiceSliderItem h3{
+    color: var(--header_color);
+}
+
+.ServiceSliderItem .HoverImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/service_hover_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all linear .4s;
+    transform: rotateY(90deg);
+}
+
+.ServiceSliderItem .HoverImg .text{
+    border-bottom: 2px dashed var(--white);
+}
+
+.ServiceSliderItem .HoverImg h3, .ServiceSliderItem .HoverImg p{
+    color: var(--white);
+}
+
+.ServiceSliderItem:hover .HoverImg{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.OurServiceContent .Arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.07), 0px 0px 18.6875px rgba(0, 0, 0, 0.035);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .3s;
+}
+
+.OurServiceContent .Arrow:hover{
+    background: var(--bg_color);
+}
+
+.OurServiceContent .Arrow i{
+    font-size: 40px;
+    color: var(--header_color2);
+    transition: all linear .3s;
+}
+
+.OurServiceContent .Arrow:hover i{
+    color: var(--white);
+}
+
+.OurServiceContent .PrevArrow{
+    position: absolute;
+    left: -30px;
+    top: 33%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.OurServiceContent .NextArrow {
+    position: absolute;
+    right: -30px;
+    top: 33%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+
+/* ====================================================================================================================
+    Start LetsBuild Part
+======================================================================================================================= */
+#LetsBuild{
+    background: url('../images/lets_build.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 120px 0;
+    margin-top: 180px;
+}
+
+#LetsBuild h2{
+    color: var(--white);
+}
+
+#LetsBuild h3{
+    color: var(--white);
+    margin-top: 20px;
+}
+
+
+
+
+/* ====================================================================================================================
+    Start OurProject Part
+======================================================================================================================= */
+
+#OurProject{
+    position: relative;
+}
+
+#OurProject .OverlayText {
+    top: -80px;
+}
+
+.OurProjectContent{
+    margin-top: 50px;
+}
+
+.OurProjectContentItem{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    border-radius: 10px;
+    transition: all linear .5s;
+    text-align: center;
+}
+
+.OurProjectContentItem .img {
+    position: relative;
+    background: #FFF;
+    z-index: 9;
+    padding: 60px 30px;
+    padding-bottom: 20px;
+    transition: all linear .4s;
+    overflow: hidden;
+}
+
+.OurProjectContentItem .img::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0px;
+    background: rgb(217, 217, 217);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0px 0px, 0px 100%, 100% 100%);
+    transition: all 0.4s linear 0s;
+    transform: translateX(-20px);
+}
+
+.OurProjectContentItem .img::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    right: 0;
+    transform: translateX(20px);
+    background: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    transition: all linear .4s;
+}
+
+.OurProjectContentItem .img img{
+    position: relative;
+    z-index: 9;
+    width: 100%;
+}
+
+.OurProjectContentItem:hover .img::before{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #A5FECB 85.09%);
+    transform: translateX(0px);
+
+}
+
+.OurProjectContentItem:hover .img::after{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #A5FECB 85.09%);
+    transform: translateX(0px);
+}
+
+.OurProjectContentItem .text{
+    padding: 20px;
+}
+
+.OurProjectContentItem .text .bg{
+    margin-top: 20px;
+    border: 1px solid var(--bg_color);
+    background: var(--white);
+    color: var(--bg_color);
+}
+
+.OurProjectContentItem:hover .bg{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%);
+    color: var(--white);
+}
+
+/* ====================================================================================================================
+    Start MeetOurPartner Part
+======================================================================================================================= */
+#MeetOurPartner{
+    position: relative;
+}
+
+#MeetOurPartner .OverlayText{
+    top: -80px;
+}
+
+.MeetOurPartnerContent{
+    margin-top: 50px;
+}
+
+.MeetOurPartnerContent img{
+    width: 100%;
+}
+
+.MeetOurLeftImg{
+    margin-right: 50px;
+}
+
+
+
+
+/* ====================================================================================================================
+    Start OurClient Part
+======================================================================================================================= */
+
+#OurClient{
+    position: relative;
+}
+
+#OurClient .OverlayText{
+    top: -80px;
+}
+
+.OurClientContent{
+    margin-top: 150px;
+}
+
+.OurClientSlider{
+    margin-right: 50px;
+}
+
+.OurClientSliderItem{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 5px rgba(217, 217, 217, 0.25);
+    border-radius: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.OurClientSlider .img {
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.OurClientSlider .img img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.OurClientContent .swiper-cube .swiper-cube-shadow:before{
+    display: none;
+}
+
+.OurClientSliderItem .text {
+    padding: 60px 0;
+    padding-top: 80px;
+}
+
+.OurClientSliderItem h5{
+    color: var(--header_color);
+}
+
+.OurClientSliderItem .header{
+    position: relative;
+}
+
+.OurClientSliderItem .header .quote {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.OurClientSliderItem .header .quote img{
+    height: 140px;
+    width: 100%;
+    border-radius: unset;
+    object-fit: fill;
+}
+
+.OurClientSliderItem h6{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--header_color2);
+    margin-top: 5px;
+}
+
+.OurClientSliderItem span{
+    margin-top: 5px;
+    color: var(--header_color2);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+}
+
+.OurClientSliderItem {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 5px rgba(217, 217, 217, 0.25);
+    border-radius: 20px;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.OurClientSliderItem p{
+    margin-top: 30px;
+}
+
+/* Slider css */
+.OurClientContent span.swiper-pagination-bullet {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 10px !important;
+}
+
+.OurClientContent span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%) ;
+}
+
+.OurClientContent .swiper-pagination {
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+}
+
+.OurClientImg img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+/* ====================================================================================================================
+    Start ThinkingDigitalization Part
+======================================================================================================================= */
+#ThinkingDigitalization{
+    background: url('../images/Thinking_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    margin-top: 250px;
+}
+
+#ThinkingDigitalization h2{
+    color: var(--white);
+}
+
+#ThinkingDigitalization h3{
+    color: var(--white);
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.ThinkingDigitalizationImg{
+    position: relative;
+}
+
+.ThinkingDigitalizationImg img {
+    position: absolute;
+    top: -300px;
+    width: 85%;
+}
+
+
+/* ====================================================================================================================
+    Start Faq Part
+======================================================================================================================= */
+#Faq{
+    position: relative;
+    padding: 50px 0;
+    height: 800px;
+}
+
+.PositionImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.PositionImg img{
+    height: 100%;
+}
+
+#Faq .container{
+    position: relative;
+    z-index: 9;
+}
+
+#Faq .header h2, #Faq .header h4{
+    color: var(--white);
+}
+
+#Faq .accordion-item {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border-radius: 18px;
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+#Faq .accordion-item button {
+    padding: 0px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--header_color2);
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+#Faq .accordion-item button h4{
+    font-size: 20px;
+    width: 90%;
+    color: var(--header_color);
+}
+
+#Faq .accordion-item button.collapsed h4{
+    font-size: 20px;
+    width: 90%;
+    color: var(--header_color2);
+}
+
+#Faq .accordion-item p{
+    margin-top: 0;
+}
+
+#Faq .accordion-body {
+    padding: 0;
+    padding-top: 30px;
+}
+
+#Faq .accordion-button::after{
+    display: none;
+}
+
+#Faq button .svg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    background: var(--bg_color);
+    cursor: pointer;
+    transition: all linear .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Faq button.collapsed .svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    transform: rotate(180deg);
+    background: var(--white);
+}
+
+
+#Faq  button .svg i{
+    color: var(--white);
+    font-size: 30px;
+}
+
+#Faq button.collapsed .svg i{
+    color: var(--header_color);
+    font-size: 30px;
+}
+
+
+
+/* ====================================================================================================================
+    Start OurGallery Part
+======================================================================================================================= */
+
+#OurGallery{
+    position: relative;
+}
+
+#OurGallery .OverlayText{
+    top: -80px;
+}
+
+.OurGalleryContent{
+    margin-top: 50px;
+}
+
+.OurGalleryImg{
+    margin-bottom: 30px;
+}
+
+.OurGalleryImg img{
+    width: 100%;
+}
+
+.OurGalleryContent span.swiper-pagination-bullet {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 10px !important;
+    transition: all linear .3s;
+}
+
+.OurGalleryContent span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%)
+}
+
+/* Mobile Gallery */
+.MobileGallery{
+    display: none;
+}
+
+
+/* ====================================================================================================================
+    Start OurBlog Part
+======================================================================================================================= */
+
+#OurBlog{
+    position: relative;
+}
+
+#OurBlog .OverlayText{
+    top: -80px;
+}
+
+.OurBlogContent{
+    margin-top: 50px;
+}
+
+.OurBlogSliderItem{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.OurBlogSliderItem img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.OurBlogSliderItem .text{
+    padding: 20px 10px;
+    padding-bottom: 0;
+}
+
+.OurBlogSliderItem .text h4{
+    justify-content: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text_color);
+}
+
+.OurBlogSliderItem .text h4 i{
+    margin-right: 10px;
+}
+
+.OurBlogSliderItem .text h3 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.OurBlogSliderItem .bg{
+    width: 100%;
+    background: #FFF;
+    border: 1px solid var(--bg_color);
+    color: var(--bg_color);
+}
+
+.OurBlogSliderItem:hover .bg{
+    color: var(--white);
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%);
+}
+
+.OurBlogContent span.swiper-pagination-bullet {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 10px !important;
+    transition: all linear .3s;
+}
+
+.OurBlogContent span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: linear-gradient(90deg, #5433FF 19.8%, #20BDFF 50.63%, #5433FF 85.09%)
+}
+
+/* ====================================================================================================================
+    Start ContuctUs Part
+======================================================================================================================= */
+
+#ContuctUs{
+    position: relative;
+}
+
+#ContuctUs .OverlayText{
+    top: -80px;
+}
+
+.ContuctUsContent{
+    margin-top: 50px;
+}
+
+.custome_input{
+    margin-top: 30px;
+}
+
+.custome_input label{
+    color: var(--text_color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.custome_input input, .custome_input textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--text_color);
+}
+
+.custome_input button{
+    border: none;
+}
+
+#ContuctUs{
+    position: relative;
+}
+
+.ContuctUsRightBg {
+    position: absolute;
+    right: 0px;
+    top: 245px;
+    width: 45%;
+    height: 58%;
+    background: linear-gradient(90deg, rgb(20, 136, 204) 19.8%, rgb(43, 50, 178) 85.09%);
+    border-radius: 20px 0px 0px 20px;
+    z-index: -1;
+}
+
+.ContuctUsRight .img{
+    width: 80%;
+}
+
+.ContuctUsRight .SocialIcon {
+    width: 15%;
+    margin-top: 50px;
+}
+
+.ContuctUsRight img{
+    width: 100%;
+}
+
+.ContuctUsRight .SocialIcon a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.ContuctUsRight .SocialIcon a:nth-child(1) {
+    margin-left: -50px;
+}
+
+.ContuctUsRight .SocialIcon a:nth-child(2) {
+    margin-left: 10px;
+}
+
+.ContuctUsRight .SocialIcon a:nth-child(3) {
+    margin-left: 10px;
+}
+
+.ContuctUsRight .SocialIcon a:nth-child(4) {
+    margin-left: -50px;
+}
+
+.ContuctUsRight .SocialIcon a:hover{
+    background: var(--white);
+}
+
+.ContuctUsRight .SocialIcon a:hover i{
+    color: var(--header_color);
+}
+
+/* ====================================================================================================================
+    Start Footer Part
+======================================================================================================================= */
+#Footer{
+    background: linear-gradient(90deg, #1488CC 19.8%, #2B32B2 85.09%);
+    padding: 100px 0;
+}
+
+#Footer p{
+    color: var(--white);
+}
+
+#Footer h3{
+    color: var(--white);
+}
+
+#Footer ul{
+    margin-top: 30px;
+}
+
+#Footer li{
+    margin-top: 20px;
+}
+
+#Footer li i{
+    color: var(--white);
+    font-size: 30px;
+    margin-right: 10px;
+    display: block;
+}
+
+#Footer li p{
+    margin-top: 0;
+}
+
+#Footer li a{
+    color: var(--white);
+    font-size: 16px;
+}
+
+
+.FooterContent .SocialIcon{
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* ====================================================================================================================
+    Start BackToTop Part
+======================================================================================================================= */
+#BackToTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--bg_color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    opacity: 0;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+#BackToTop.show{
+    opacity: 1;
+}
