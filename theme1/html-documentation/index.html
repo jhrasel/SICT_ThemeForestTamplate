@@ -1,245 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Documentation - The Blue Soft Template</title>
-      <link rel="shortcut icon" href="favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blue Soft</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/FAV icon.svg">
 
-      <!-- stylesheet -->
-      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/jasny-bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/shDocumenter.css">
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->
-   </head>
-   <body>
-      <header id="header">
-         <div class="container-full">
-            <div class="row">
-               <div class="col-sm-2 visible-xs">
-                  <div class="navbar-mobile navbar-default">
-                     <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                  </div>
-               </div>
-               <div class="col-sm-3 col-lg-3">
-                  <div id="logo"> <span><a href="index.html"><img src="images/logo.svg"  alt="" class="img-responsive" /></a></span> </div>
-               </div>
-               <div class="col-sm-4 col-lg-5">
-                  <div id="slogan"> <span>Documentation for <span class="color">The Blue Soft HTML Template</span></span> </div>
-               </div>
-               <div class="col-sm-5 col-lg-4">
-                  <ul class="notifications">
-                     <li> <a href="https://mpithemes.ticksy.com/" class="dropdown-toggle"> <span class="icon flaticon-shopping155"></span><span class="n-text">Support</span> </a> </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </header>
-      <div class="canvas">
-         <div id="content">
-            <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-xs" id="navmenu">
-               <ul class="nav navmenu-nav">
-                  <li><a href="#documenter_cover"></span>Getting Started</a></li>
-                  <li><a href="#folder_structure"></span>Folder Structure</a></li>
-                  <li><a href="#html_structure"></span>HTML Structure</a></li>
-                  <li><a href="#css_files_and_structure"></span>CSS Files and Structure</a></li>
-                   <li><a href="#sass">Sass(Scss) Files and Structure</a></li>
-                  <li><a href="#javascript"><span class="icon icon-lg  flaticon-add139"></span>JavaScript</a></li>
-                  <li><a href="#icons"></span>Icons</a></li>
-                  <li><a href="#fonts"></span>Fonts</a></li>
-                  <li><a href="#sources_and_credits"></span>Sources and Credits</a></li>
-               </ul>
-            </div>
-            <div id="page-content">
-               <section class="chapter" id="documenter_cover">
-                  <h1>The Blue Soft</h1>
-                  <h2>Premium HTML 5 website</h2>
-                  <ul>
-                     <li>Created: September 2022.</li>
-                     <li>By: MPIthemes - Envato author <a href="https://themeforest.net/user/mpithemes"> Profile </a></li>
-                  </ul>
-                  <p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us via our support forum <a href="https://mpithemes.ticksy.com/">https://mpithemes.ticksy.com/</a>. Thank you very much! <br>
-                     <br>
-                     <strong>The Blue Soft</strong> is Html5 + CSS3 Website template and works fine in all major browsers and IE from version 9. It's powered by jQuery and you'll find nice and discreet interactivity.  The code is clearly written and you will find comments for each considerable parts. <br>
-                     <br>
-                     Lets take a closer look at the structure of Html, Css, JavaScript.
-                  </p>
-               </section>
-               <section class="chapter" id="folder_structure">
-                  <h3>Folder Structure</h3>
-                  <p>When you unpack downloaded archive from ThemeForest.net you'll get folder containing 2 folders.</p>
-                  <p>Here they are, sorted alphabetically:</p>
-                  <ol>
-                     <li><strong>html-documentation</strong> - Documentation for The Blue Soft site template</li>
-                     <li><strong>html-master</strong> - Main folder for template</li>
-                  </ol>
-                  <h4>HTML folder structure:</h4>
-                  <ul>
-                     <li>
-                        <strong>/html-master</strong>
-                         <ul>
-                             <li>
-                                 <strong>/src</strong> (Gulp project)
-                                 <ul>
-                                     <li><strong>/template</strong> (All including templates)</li>
-                                 </ul>
-                             </li>
-                             <li>
-                                 <strong>/assets</strong> (HTML result)
-                                 <ul>
-                                     <li><strong>/styles</strong> (Template CSS)</li>
-                                     <li><strong>/scripts</strong> (Template JavaScript)</li>
-                                     <li><strong>/images</strong> (All Images)</li>
-                                 </ul>
-                             </li>
-                         </ul>
-                     </li>
-                  </ul>
-                  <h4>CONTENT </h4>
-                  <p>Content divided on pages:</p>
-                  <ul class="marked-list">
-                      <li>index.html - <strong>Home pages</strong></li>
-                  </ul>
-               </section>
-               <section class="chapter" id="html_structure">
-                  <h3>HTML Structure</h3>              
-                           
-                  <h4>Grid:</h4>
-                  <p>Based on Bootstrap, a sleek, intuitive, and powerful front-end framework.</p>
-                  <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
-                  <pre class="brush: html">
-    &lt;!DOCTYPE html&gt;
-        &lt;html lang="en"&gt;
-            ...
-        &lt;/html&gt;</pre>
-                  <p>The default Bootstrap grid system utilizes 12 columns.</p>
-                  <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.col-lg-*</code> columns. As this is a 12-column grid, each <code>.col-lg-*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
-                  <pre class="brush: html">
-    &lt;div class="row"&gt;
-        &lt;div class="col-lg-4"&gt;...&lt;/div&gt;
-        &lt;div class="col-lg-8"&gt;...&lt;/div&gt;
-    &lt;/div&gt;</pre>
-                  <p>Given this example, we have .col-lg-4 and .col-lg-8, making for 12 total columns and a complete row.</p>
-                  <p>Move columns to the right using <code>.col-lg-offset-*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.col-lg-offset-4</code> moves <code>.col-lg-4</code> over four columns.</p>
-                  <pre class="brush: html">
-    &lt;div class="row"&gt;
-            &lt;div class="col-lg-4"&gt;...&lt;/div&gt;
-            &lt;div class="col-lg-4 col-lg-offset-2"&gt;...&lt;/div&gt;
-        &lt;/div&gt;</pre>
-                  <br>
-                  <p>If you need more information, please visit this site: https://getbootstrap.com/docs/4.3/layout/grid/</p>
-               </section>
-               <section class="chapter" id="css_files_and_structure">
-                  <h3>CSS Files</h3>
-                  <p>Css file located at <strong>assets/styles</strong> folder.</p>
-                  <ul>
-                     <li><strong>style.css</strong> - Theme main CSS file.</li>
-                  </ul>
-               </section>
-               <section class="chapter" id="javascript">
-                  <h3>JavaScript</h3>
-                  <p>All JS files located at <strong>js</strong> folder.</p>
-                  <ul>
-                     <li><strong>custome.js</strong> - Theme main JS files and folder.</li>
-                  </ul>
-                  <h4>Changing Plugins Options</h4>
-                  <p>You can change plugins options in the files in scripts/ folder.</p>
-                  <p>For example, you can change any carousel options:</p>
-                  <pre class="brush: html">
-                     
-                     var swiper = new Swiper(".OurClientSlider", {
-                        effect: "cube",
-                        grabCursor: true,
-                        autoplay: {
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        },
-                        cubeEffect: {
-                          shadow: true,
-                          slideShadows: true,
-                          shadowOffset: 20,
-                          shadowScale: 0.94,
-                        },
-                        pagination: {
-                          el: ".swiper-pagination",
-                          clickable: true,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
 
-                  </pre>
-                  
-                  
-                  <p>and other. </p>
-                  <p>If you need more information, please visit plugins official sites.</p>
-               </section>
-               <section class="chapter" id="fonts">
-                  <h3>Fonts</h3>
-                  To change the custom font, please take a look in the layuot/global/_type.scss:
-                  <pre class="brush: css">
-  /* Google font */
-  <link href='https://fonts.googleapis.com/css2?family=Inter' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css2?family=Caveat' rel='stylesheet' type='text/css'>
-</pre>
-                  To change fonts, go to http://www.google.com/webfonts, choose new fonts and use the generated code.
-               </section>
-               <section class="chapter" id="sources_and_credits">
-                  <h3>Sources and Credits</h3>
-                  <p>We have used the following  files as listed.</p>
-                  <ul class="marked-list">
-                      <li><a href="http://jquery.com/">jQuery</a> - JavaScript Library</li>
-                      <li><a href="http://getbootstrap.com/">Bootstrap</a> - Bootstrap by Twitter</li>
-                      <li><a href="https://swiperjs.com/demos/">Swiper</a>
-                  </ul>
-                  <hr />
-                  <p>Once again, thank you for purchasing this Theme. As mentioned at the beginning of this documentation, we would be glad to help you if you have any questions related to this Theme. For more general question related to this Theme on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
-                  <p>If you are satisfied with &quot;The Blue Soft - site template&quot; please go to your downloads section on ThemeForest.net and rate The Blue Soft with 5 stars. Otherwise, <a href="mailto:https://mpthemes.net">send an Email</a> and I will try to find nice and easy solution for you :)</p>
-                  <p>Hope that you will enjoy in The Blue Soft as much as I've enjoyed designing this template.</p>
-                  <p>Kind Regards,<br>
-                     <strong>MPIthemes</strong>
-                  </p>
-               </section>
+    <!-- Google Font -->
+
+    <!-- Font Name Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Css File -->
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- unicons.iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Aos css Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media Query -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+<body>
+
+
+<!-- ====================================================================================================================
+    Start MenuBar Part
+=========================================================================================================================-->
+<div class="Menubar"></div>
+
+
+<!-- ====================================================================================================================
+    Start Sidebar Part
+=========================================================================================================================-->
+<div class="Sidebar">
+
+    <!-- logo -->
+    <div class="logo">
+        <img src="assets/images/logo.svg" alt="">
+    </div>
+
+    <!-- Documentation -->
+    <div class="Documentation">
+
+        <h3>Documentation</h3>
+        <p>This is The Blue Soft - Software Company HTML5 Tamplates documentation</p>
+
+    </div>
+
+    <!-- SideBarTabs -->
+    <div class="SideBarTabs">
+
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <!-- GetStarted -->
+            <button class="nav-link active" id="v-pills-GetStarted-tab" data-bs-toggle="pill" data-bs-target="#v-pills-GetStarted" type="button" role="tab" aria-controls="v-pills-GetStarted" aria-selected="true">
+                Get Started
+            </button>
+
+            <!-- FolderStructure -->
+            <button class="nav-link" id="v-pills-FolderStructure-tab" data-bs-toggle="pill" data-bs-target="#v-pills-FolderStructure" type="button" role="tab" aria-controls="v-pills-FolderStructure" aria-selected="false">Folder Structure</button>
+
+            <!-- HTMLStructure -->
+            <button class="nav-link" id="v-pills-HTMLStructure-tab" data-bs-toggle="pill" data-bs-target="#v-pills-HTMLStructure" type="button" role="tab" aria-controls="v-pills-HTMLStructure" aria-selected="false">HTML Structure</button>
+
+            <!-- CSS Files -->
+            <button class="nav-link" id="v-pills-CSSFiles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-CSSFiles" type="button" role="tab" aria-controls="v-pills-CSSFiles" aria-selected="false">CSS Files And Structure</button>
+
+            <!-- JavaScript -->
+            <button class="nav-link" id="v-pills-JavaScript-tab" data-bs-toggle="pill" data-bs-target="#v-pills-JavaScript" type="button" role="tab" aria-controls="v-pills-JavaScript" aria-selected="false">JavaScript</button>
+
+            <!-- Icons -->
+            <button tton class="nav-link" id="v-pills-Icons-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Icons" type="button" role="tab" aria-controls="v-pills-Icons" aria-selected="false">Icons</button>
+
+            <!-- Fonts -->
+            <button class="nav-link" id="v-pills-Fonts-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Fonts" type="button" role="tab" aria-controls="v-pills-Fonts" aria-selected="false">Fonts</button>
+
+            <!-- Sources -->
+            <button class="nav-link" id="v-pills-Sources-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Sources" type="button" role="tab" aria-controls="v-pills-Sources" aria-selected="false">Sources And Credits</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ====================================================================================================================
+    Start TabItemContent Part
+=========================================================================================================================-->
+<section id="TabItemContent">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="TabItemContentPart">
+
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <!-- GetStarted -->
+                    <div class="tab-pane fade show active" id="v-pills-GetStarted" role="tabpanel" aria-labelledby="v-pills-GetStarted-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>The Blue Soft - Software Company HTML5 Tamplate</h4>
+
+                            <!-- FlexItem -->
+                            <div class="FlexItem">
+
+                                <ul>
+
+                                    <li>Created: September 2022.</li>
+                                    <li>By: <a href="https://themeforest.net/user/softitcare">Soft IT Care - ThemeForest author Profile</a></li>
+
+                                </ul>
+
+                            </div>
+
+                            <p>Thank you for purchasing our template. If you have any questions that are beyond the scope of this help file, please feel free to email us via our support support@softitcare.com . Thank you very much!
+                                <br>
+                                <br>
+
+                                The Blue Soft HTML is Html5 + CSS3 Website template and works fine in all major browsers and IE from version 9. It's powered by jQuery and you'll find nice and discreet interactivity. The code is clearly written and you will find comments for each considerable parts.
+                                <br>
+                                <br>
+                                Lets take a closer look at the structure of Html, Css, JavaScript.
+                            </p>
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- FolderStructure -->
+                    <div class="tab-pane fade" id="v-pills-FolderStructure" role="tabpanel" aria-labelledby="v-pills-FolderStructure-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>Folder Structure</h4>
+
+                            <p>html-master/</p>
+                            <p>/src(Project)</p>
+                            <p>/template (All including templates)</p>
+                            <p>/styles (Template CSS)</p>
+                            <p>/scripts (Template JavaScript)</p>
+                            <p>/images (All Images)</p>
+
+                         </div>
+
+                    </div>
+
+                    <!-- HTML Structure -->
+                    <div class="tab-pane fade" id="v-pills-HTMLStructure" role="tabpanel" aria-labelledby="v-pills-HTMLStructure-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>HTML Structure</h4>
+
+                            <h5>GRID:</h5>
+
+                            <div class="FlexItem">
+
+                                <ul style="width: 100%;">
+
+                                    <li>Based on Bootstrap, a sleek, intuitive, and powerful front-end framework.</li>
+                                    <li>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</li>
+                                    <p>< ! DOCTYPE html > <br>
+                                        < html lang="en"> <br>
+                                            ...
+                                        < /html> <br></p>
+                                        <br>
+                                    <li>The default Bootstrap grid system utilizes 12 columns.</li>
+                                    <li>For a simple two column layout, create a .row and add the appropriate number of .col-lg-* columns. As this is a 12-column grid, each .col-lg-* spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</li>
+                                    <li>
+                                        <p>
+                                            < div class="row"> <br>
+                                                <span style="margin-left: 20px;"> < div class="col-lg-4"> ... < /div> </span>  <br>
+
+                                                <span style="margin-left: 20px;"> < div class="col-lg-8"> ... < /div> </span> <br>
+                                            < /div>
+                                        </p>
+                                    </li>
+                                    <li>If you need more information, please visit this site: https://getbootstrap.com/docs/5.0/layout/grid/</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CSS Files -->
+                    <div class="tab-pane fade" id="v-pills-CSSFiles" role="tabpanel" aria-labelledby="v-pills-CSSFiles-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>CSS Files And Structure</h4>
+
+                        </div>
+
+                        <p style="font-weight: 700;">All JS files located at scripts folder.</p>
+
+                        <div class="TabContentItem FlexItem">
+
+                            <ul>
+
+                                <li>style.css - Theme main CSS file.</li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="tab-pane fade" id="v-pills-JavaScript" role="tabpanel" aria-labelledby="v-pills-JavaScript-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>JavaScript</h4>
+
+                        </div>
+
+                        <p style="font-weight: 700;">All JS files located at js folder.</p>
+
+                        <div class="TabContentItem FlexItem">
+
+                            <ul>
+
+                                <li>custom.js/ - Theme main JS files and folder.</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Icons -->
+                    <div class="tab-pane fade" id="v-pills-Icons" role="tabpanel" aria-labelledby="v-pills-Icons-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>Icons</h4>
+
+                        </div>
+
+                        <p style="font-weight: 700;">You can use icons from the <a href="https://iconscout.com/unicons">unicons</a></p>
+
+                        <div class="TabContentItem FlexItem">
+
+                            <ul>
+
+                                <li>< i class="uil uil-airplay"> < /i> </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- Fonts -->
+                    <div class="tab-pane fade" id="v-pills-Fonts" role="tabpanel" aria-labelledby="v-pills-Fonts-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>Fonts</h4>
+
+                        </div>
+
+                        <div class="TabContentItem FlexItem">
+
+                            <ul style="width: 100%;">
+
+                                <li>/* Google font */</li>
+                                <li> < link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet" type="text/css" ></li>
+                                <li> < link href="https://fonts.googleapis.com/css2?family=Caveat" rel="stylesheet" type="text/css "></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Sources -->
+                    <div class="tab-pane fade" id="v-pills-Sources" role="tabpanel" aria-labelledby="v-pills-Sources-tab">
+
+                        <!-- Get Started -->
+                        <div class="TabContentItem">
+
+                            <h4>Sources</h4>
+
+                        </div>
+
+                        <!-- Folder Structure -->
+                        <div class="TabContentItem">
+
+                            <p>We have used the following files as listed.</p>
+
+                            <!-- FlexItem -->
+                            <div class="FlexItem">
+
+                                <ul>
+
+                                    <li><a href="https://jquery.com/">jQuery</a> - JavaScript Library</li>
+                                    <li><a href="https://getbootstrap.com/">Bootstrap</a> - Bootstrap by Twitter</li>
+                                    <li><a href="https://swiperjs.com/demos">Swiper</a> - Swiper</li>
+                                    <li><a href="/">jQuery Cookie</a> - jQuery Cookie plugin</li>
+                                    <li><a href="/">jQuery Bridget</a> - jQuery Bridget plugin</li>
+                                    <li><a href="/">jQuery UI Widget</a> - jQuery UI Widget plugin</li>
+                                    <li> <a href="https://michalsnik.github.io/aos/">AOS</a> AOS</li>
+
+                                </ul>
+
+                            </div>
+
+                            <p>Once again, thank you for purchasing this Theme. As mentioned at the beginning of this documentation, we would be glad to help you if you have any questions related to this Theme. For more general question related to this Theme on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                            <p>If you are satisfied with "The Blue Soft - Software Company HTML5 Tamplate" please go to your downloads section on ThemeForest.net and rate The Blue Soft - Software Company HTML5 Tamplate with 5 stars. Otherwise, send an Email and I will try to find nice and easy solution for you :)</p>
+                            <p>Hope that you will enjoy in The Blue Soft HTML as much as I've enjoyed designing this template.</p>
+                            <p>Kind Regards, <br> <a href="https://softitcare.com/">Soft IT Care</a></p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
             </div>
-         </div>
-      </div>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-      <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
-      <script type="text/javascript" src="assets/js/jasny-bootstrap.min.js"></script> 
-      <script src="assets/js/shCore.js"></script> 
-      <script src="assets/js/shBrushCss.js"></script> 
-      <script src="assets/js/shBrushXml.js"></script> 
-      <script src="assets/js/shBrushJScript.js"></script> 
-      <script>SyntaxHighlighter.defaults['toolbar'] = false;
-         SyntaxHighlighter.all();
-      </script> 
-      <script> 
-         $(document).ready(function() {
-          $('.nav.navmenu-nav a').click(function(){
-            $('.nav.navmenu-nav a').removeClass('active');
-            $(this).addClass('active');
-            $('html, body').animate({
-              scrollTop: $( $(this).attr('href') ).offset().top - 100
-            }, 500);
-            return false;
-          });
-           $('.dropdown').on('show.bs.dropdown', function(e){
-             $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-           });
-           $('.dropdown').on('hide.bs.dropdown', function(e){
-             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-           });
-         });
-      </script>
-   </body>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================================================================================
+    Start  Part
+=========================================================================================================================-->
+
+
+
+
+<!-- ====================================================================================================================
+    Start  Part
+=========================================================================================================================-->
+
+
+
+
+<!-- ====================================================================================================================
+    Start  Part
+=========================================================================================================================-->
+
+
+
+
+
+<!-- ====================================================================================================================
+    Start  Part
+=========================================================================================================================-->
+
+
+
+
+
+<!-- ====================================================================================================================
+    Start  Part
+=========================================================================================================================-->
+
+
+<!-- ====================================================================================================================
+    Start BackToTop Part
+=========================================================================================================================-->
+
+
+
+    <!-- Js Script File -->
+
+    <!-- Main J Query -->
+    <script src="assets/js/jquery-2.2.4.js"></script>
+    <!-- bootstrap.min.js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- custome.js -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Aos js Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
 </html>

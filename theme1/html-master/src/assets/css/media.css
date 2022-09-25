@@ -242,6 +242,10 @@
     .ContuctUsRight .SocialIcon a i{
         color: var(--white);
     }
+
+    #Footer .SocialIcon a i{
+        color: var(--white);
+    }
     
     
 
@@ -448,5 +452,14 @@
     .ContuctUsRight .img {
         width: 85%;
     }
+    .MobileBanner .swiper-slide img {
+        height: 265px;
+    }
+    #BackToTop {
+        bottom: 15px;
+        right: 15px;
+    }
+
+
 
 }
